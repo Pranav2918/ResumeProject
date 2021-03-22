@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'base/images/img.jpg' %}" alt="ProfileImage" class="img-thumbnail" width="250px" height="150px">    
+    </div>
+   
+    <div class="mt-4 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">I'm <b class="text-primary">Pranav Dave</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   </p>
+                
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-outline-primary mr-3 " href="{% url 'contact' %}">Hire me!</a>
+        <a class="btn btn-outline-warning my-3" href="{% url 'contact' %}">Contact</a> 
+    </div>
+</div>
+    
+                    
+{% endblock content %}  
